@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;500;700&family=Source+Sans+Pro:wght@700&display=swap");
+
+$f-mont: "Montserrat", sans-serif;
+$f-pop: "Poppins", sans-serif;
+$f-pro: "Source Sans Pro", sans-serif;
+
+$fw-subtitle: 700;
+$fw-subtitle2: 500;
+$fw-p: 300;
+
+@mixin span-title() {
+  font-family: $f-pop;
+  font-size: 0.6rem;
+  color: $brown;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1;
+  font-weight: $fw-subtitle2;
+}
+
+// must edited at different breakpoint
+@mixin paragraph($ff: $f-pop, $fw: $fw-p, $fs: 0.8rem, $color: white, $lh: 1) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  color: $color;
+  line-height: $lh;
+}
+
+@mixin subtitle(
+  $ff: $f-pop,
+  $fw: $fw-subtitle,
+  $fs: 1.5rem,
+  $color: $grey,
+  $lh: 1
+) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  color: $color;
+  line-height: $lh;
+}
